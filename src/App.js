@@ -77,7 +77,7 @@ render(){
                 initialViewState={{
                     latitude: 48.8566,
                     longitude: 2.3522,
-                    zoom: 11
+                    zoom:12
                 }}
                 mapStyle="mapbox://styles/mapbox/streets-v9"
                 mapboxAccessToken={MAPBOX_TOKEN}
