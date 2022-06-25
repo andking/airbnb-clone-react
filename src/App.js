@@ -6,6 +6,9 @@ import Flat from './components/flat';
 // import Marker from './components/marker';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import './components/marker.css'
+import mapboxgl from '!mapbox-gl'; // eslint-disable-line import/no-webpack-loader-syntax
+
+mapboxgl.accessToken = 'pk.eyJ1IjoiYW5ka2luZyIsImEiOiJjbDB2bHZ2cjIwd2RkM3BvYWFsbjJqdG9vIn0.MxNTMNUhZnNvhm-sKJnHmw';
 
 class App extends Component {
     constructor(props) {
@@ -79,7 +82,7 @@ render(){
                     zoom:12
                 }}
                 mapStyle="mapbox://styles/mapbox/streets-v9"
-                mapboxAccessToken={process.env.REACT_APP_MAPBOX_API_KEY}
+                mapboxAccessToken={'pk.eyJ1IjoiYW5ka2luZyIsImEiOiJjbDB2bHZ2cjIwd2RkM3BvYWFsbjJqdG9vIn0.MxNTMNUhZnNvhm-sKJnHmw'}
                 >
                 {this.state.flats.map((flat) => {
                     return <Marker key={flat.name}
