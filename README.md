@@ -8,4 +8,4 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run in the terminal to launch:
 
-### `npm run serve`
+### `npm run start`
