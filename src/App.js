@@ -79,7 +79,7 @@ render(){
                     zoom:12
                 }}
                 mapStyle="mapbox://styles/mapbox/streets-v9"
-                mapboxAccessToken={'pk.eyJ1IjoiYW5ka2luZyIsImEiOiJjbDB2bHZ2cjIwd2RkM3BvYWFsbjJqdG9vIn0.MxNTMNUhZnNvhm-sKJnHmw'}
+                mapboxAccessToken={process.env.REACT_APP_MAPBOX_API_KEY}
                 >
                 {this.state.flats.map((flat) => {
                     return <Marker key={flat.name}
