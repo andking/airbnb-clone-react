@@ -49,7 +49,6 @@ render(){
     //     longitude: 2.3522
     //   };
 
-    const MAPBOX_TOKEN = 'pk.eyJ1IjoiYW5ka2luZyIsImEiOiJjbDB2bHZ2cjIwd2RkM3BvYWFsbjJqdG9vIn0.MxNTMNUhZnNvhm-sKJnHmw';
     let classes = "marker";
     if(this.props.selected){
         classes += "selected";
@@ -80,7 +79,7 @@ render(){
                     zoom:12
                 }}
                 mapStyle="mapbox://styles/mapbox/streets-v9"
-                mapboxAccessToken={MAPBOX_TOKEN}
+                mapboxAccessToken={'pk.eyJ1IjoiYW5ka2luZyIsImEiOiJjbDB2bHZ2cjIwd2RkM3BvYWFsbjJqdG9vIn0.MxNTMNUhZnNvhm-sKJnHmw'}
                 >
                 {this.state.flats.map((flat) => {
                     return <Marker key={flat.name}
